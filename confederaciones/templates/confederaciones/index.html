@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mundial en Rusia</title>
+    <link rel="stylesheet" href="{% static 'confederaciones/style.css' %}" />
+</head>
+<body>
+    <h1>grupo a</h1>
+    {% if selecciones %}
+    <ul>
+       {% for seleccion in selecciones %}
+       <li>
+           {{ seleccion }}
+       </li>
+       {% endfor %}
+    </ul>
+    {% else %}
+    <p>No hay equipos aun.</p>
+    {% endif %}
+</body>
+</html>
