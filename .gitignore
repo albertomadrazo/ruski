@@ -1,1 +1,4 @@
-/ruski/settings/prod.py
+*.pyc
+
+ruski/settings/base.py
+ruski/settings/prod.py
